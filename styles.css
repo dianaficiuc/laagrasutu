@@ -1,0 +1,114 @@
+* box-sizing:{border-box;}
+body {
+	margin:0;
+	font-family: "roboto", sans-serif;
+	background-color: black;
+}
+
+.toolbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 50px;
+}
+
+li {
+  float: center;
+}
+
+li .toolbar-button {
+  text-transform: uppercase;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li .toolbar-button:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+.toolbar ul {
+	list-style-type: none;
+}
+.content {
+	margin-top: 94px;
+	position: relative;
+}
+header h1{
+	margin: 0;
+}	
+.text-overlay {
+position: absolute;
+top: 0;
+left: 0;
+z-index: 1;	
+text-align: center;
+color: white;
+width: 100%;
+background-color: rgba(32,32,32,0.5);
+filter: opacity(0.7);
+}
+.photos::after {
+	content:'';
+	clear:both;
+	display: table;
+}
+.gallery {
+  margin: 10px;
+  border: 1px solid #ccc;
+  width: 650px;
+  height: auto;
+}
+.three {
+	float: left;
+	width: 48%;
+	text-align: center;
+}
+
+div.gallery img {
+  max-width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  display: absolute;
+
+}
+.hero-image {
+  background-image: url("./food/photo-1541167113378-1f06d813887f.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  filter: opacity(0.9);
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+}
+.meniuh2 {
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
